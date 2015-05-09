@@ -66,18 +66,159 @@
                                     <strong>سرویس مجانی</strong>
                                 </h4>
                                 <p>تنها با استفاده از پلاک ماشین خود می توانید جای پارک رزرو کنید</p>
-                                <div class="btn btn-light" onclick="popup()">رزرو</div>
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <a type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal" data-title="Feedback">رزرو</a>
 
-                                <script type="text/javascript">
-                                    function popup() {
-                                        w2popup.open({
-                                            title: 'سیستم رزرو هوشمند',
-                                            body: '<div class="w2ui-centered"><input value="1">شماره پارکینگ</input><br/><br/><table><tr><td><br/><input value="31/1/1394">رفت</input><div><div class="input-group clockpicker "><input type="text" class="form-control" value="05:00"/><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div><br/></td><td><br/><input value="31/1/1394">برگشت</input><div><div class="input-group clockpicker "><input type="text" class="form-control" value="06:30"/><span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span></div></div><br/></td></tr></table><br/><a href="http://localhost:3000/reserve/plate_no=12&parking_no=58&start_time=2015-03-01%2000:33&end_time=2015-03-01%2001:33" class="btn btn-light">رزرو</a>'
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade btn">
 
-                                        });
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title">رزرو</h4>
+                                            </div>
+                                            <div class="modal-body" align="right">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">
 
-                                    }
-                                </script>
+                                                        <div class="col-lg-10">
+                                                            <div id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_PlakPanel" class="PlakContainer" style="background-image: 'img/pelak.gif';height:65px;width:250px;">
+                                                                
+                                                                <table class="plt" style="font-size: 9pt; line-height: 15px; font-family: Tahoma;
+        background-repeat: no-repeat;" border="0" dir="rtl">
+                                                                    <tbody><tr>
+                                                                        <td valign="top">
+                                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                                <tbody><tr>
+                                                                                    <td style="line-height: 14px; font-size: 14px; font-family: roya;width: 56px;" align="center">
+                                                                                    </td>
+                                                                                    <td align="center" style="line-height: 14px; font-size: 12px;">
+                                                                                        &nbsp;
+                                                                                    </td>
+                                                                                    <td style="line-height: 14px; font-size: 12px;" align="center">
+                                                                                        &nbsp;
+                                                                                    </td>
+                                                                                    <td style="line-height: 14px; font-size: 12px; " align="center">
+                                                                                        &nbsp;
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="plt" style="line-height: 14px; font-size: 12px; padding-right: 5px;" align="right" valign="top">
+                                                                                        <input name="dnn$ctr384$RequestTimeLimitedBasketSales$plqcontrolForInsert$txtCitySerail" type="text" maxlength="2" id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_txtCitySerail" tabindex="4" onkeypress="ValidateNumber(event); " onkeyup="var Key = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode; if (Key==37 || Key==38 || Key==39 || Key==40 || Key==9) return false; " style="font-family:Roya;font-size:18px;height:25px;width:30px;text-align:center;"><br><span id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_ctl00" style="color:Red;display:none;">*</span>
+                                                                                    </td>
+                                                                                    <td style="line-height: 14px; font-size: 12px;" valign="top">
+                                                                                        <input name="dnn$ctr384$RequestTimeLimitedBasketSales$plqcontrolForInsert$txtAutoNumber1" type="text" maxlength="3" id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_txtAutoNumber1" tabindex="3" onkeypress="ValidateNumber(event); " onkeyup="var Key = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode; if (Key==37 || Key==38 || Key==39 || Key==40 || Key==9) return false; " style="font-family:Roya;font-size:18px;height:25px;width:35px;text-align:center;"><br><span id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_ctl01" style="color:Red;display:none;">*</span>
+                                                                                    </td>
+                                                                                    <td style="line-height: 14px; font-size: 12px;" valign="top">
+                                                                                        <select name="dnn$ctr384$RequestTimeLimitedBasketSales$plqcontrolForInsert$ddPlakLetter" id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_ddPlakLetter" tabindex="2" style="font-family:Roya;font-size:15px;height:30px;width:45px;">
+                                                                                            <option selected="selected" value=""></option>
+                                                                                            <option value="1">الف</option>
+                                                                                            <option value="2">ب</option>
+                                                                                            <option value="3">ت</option>
+                                                                                            <option value="4">ج</option>
+                                                                                            <option value="5">د</option>
+                                                                                            <option value="7">س</option>
+                                                                                            <option value="8">ص</option>
+                                                                                            <option value="9">ط</option>
+                                                                                            <option value="10">ع</option>
+                                                                                            <option value="11">ق</option>
+                                                                                            <option value="12">ل</option>
+                                                                                            <option value="13">م</option>
+                                                                                            <option value="14">ن</option>
+                                                                                            <option value="15">ه</option>
+                                                                                            <option value="16">و</option>
+                                                                                            <option value="17">ی</option>
+
+                                                                                        </select><br><span id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_ctl02" style="color:Red;display:none;">*</span>
+                                                                                    </td>
+                                                                                    <td style="line-height: 14px; font-size: 12px;" valign="top">
+                                                                                        <input name="dnn$ctr384$RequestTimeLimitedBasketSales$plqcontrolForInsert$txtAutoNumber2" type="text" maxlength="2" id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_txtAutoNumber2" tabindex="1" onkeypress="ValidateNumber(event); " onkeyup="var Key = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode; if (Key==37 || Key==38 || Key==39 || Key==40 || Key==9) return false; " style="font-family:Roya;font-size:18px;height:25px;width:30px;text-align:center;"><br><span id="dnn_ctr384_RequestTimeLimitedBasketSales_plqcontrolForInsert_ctl03" style="color:Red;display:none;">*</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody></table>
+
+                                                                        </td>
+
+                                                                    </tr>
+                                                                    </tbody></table>
+
+                                                            </div>
+                                                        </div>
+                                                        <label class="col-lg-2 control-label">شماره پلاک</label>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-10">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="col-lg-2 control-label">شماره پارکینگ</label>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-10">
+                                                            <div class="input-group clockpicker ">
+                                                                <input type="text" class="form-control" value="09:30">
+		    <span class="input-group-addon">
+		        <span class="glyphicon glyphicon-time"></span>
+		    </span>
+                                                            </div>
+
+                                                            <script type="text/javascript">
+                                                                $('.clockpicker').clockpicker();
+                                                            </script>
+                                                        </div>
+                                                        <label class="col-lg-2 control-label">رفت</label>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-10">
+                                                            <div class="input-group clockpicker ">
+                                                                <input type="text" class="form-control" value="09:30">
+		    <span class="input-group-addon">
+		        <span class="glyphicon glyphicon-time"></span>
+		    </span>
+                                                            </div>
+
+                                                            <script type="text/javascript">
+                                                                $('.clockpicker').clockpicker();
+                                                            </script>
+                                                        </div>
+                                                        <label class="col-lg-2 control-label">برگشت</label>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-10">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="col-lg-2 control-label">تاریخ</label>
+                                                    </div>
+                                                    <br><br>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a type="button" class="btn btn-default" data-dismiss="modal">Cancel</a>
+                                                <a type="button" class="btn btn-success">رزرو</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -106,7 +247,7 @@
 
     <!-- Callout -->
         <!-- Call to Action -->
-    <aside class="call-to-action">
+    <aside id="contact" class="call-to-action">
         <div class="container">
             <div class="row2">
                 <div class="col-lg-12 text-center">
@@ -117,7 +258,7 @@
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <section class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=University Of Tehran ,+Tehran &amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
