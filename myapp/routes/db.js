@@ -16,7 +16,8 @@ db.on('open', function(err) {
     var reserveSchema = mongoose.Schema({
         _id: Number,
         slot_no: Number,
-        car_id: String
+        car_id: String,
+        status: Number
     });
 
 
