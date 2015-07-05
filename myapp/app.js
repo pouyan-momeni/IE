@@ -9,6 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var reserve = require('./routes/reserve');
 var status = require('./routes/status');
+var parkban = require('./routes/parkban');
+var login = require('./routes/login');
+var map = require('./routes/map');
 
 var app = express();
 
@@ -25,9 +28,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 app.use('/reserve', reserve);
 app.use('/status', status);
+app.use('/parkban', parkban);
+app.use('/login', login);
+app.use('/map', map);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
