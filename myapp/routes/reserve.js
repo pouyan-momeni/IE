@@ -44,7 +44,7 @@ function saveReservationInDb() {
 function sendDataToMobileServer(res, parking_no, status){
 
     console.log("=======================");
-    request('http://192.168.43.1:3000/?slot_no=' + 0 + '&reserve=' + 1, function (error, response, body) {
+    request('http://162.223.94.220:3000/?slot_no=' + 0 + '&reserve=' + 1, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(error);
             res.render('complete_reserve.jade', {
